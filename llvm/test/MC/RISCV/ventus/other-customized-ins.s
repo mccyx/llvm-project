@@ -20,6 +20,14 @@ regexti x0, x0, 8
 # CHECK-INST: regexti zero, zero, 8
 # CHECK-ENCODING: [0x0b,0x30,0x80,0x00]
 
+regpair x0, x0, 8
+# CHECK-INST: regpair zero, zero, 8
+# CHECK-ENCODING: [0x0b,0x50,0x80,0x00]
+
+regpairi x0, x0, 8
+# CHECK-INST: regpairi zero, zero, 8
+# CHECK-ENCODING: [0x0b,0x70,0x80,0x00]
+
 endprg x0, x0, x0
 # CHECK-INST: endprg x0, x0, x0
 # CHECK-ENCODING: [0x0b,0x40,0x00,0x00]
